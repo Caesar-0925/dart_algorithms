@@ -6,6 +6,7 @@ String longestPalindrome(String s) {
    */
   final dp = List.generate(len, (index) => List.filled(len, false));
   var ans = '';
+
   for (var l = 0; l < len; l++) {
     for (var i = 0; i < len - l; i++) {
       final j = i + l;
@@ -21,6 +22,7 @@ String longestPalindrome(String s) {
       }
     }
   }
+
   return ans;
 }
 
